@@ -1,9 +1,38 @@
 # ⚡ WindSight: Wind Turbine Power Analysis and Forecasting System
 
-![image](https://github.com/user-attachments/assets/404344bd-3947-4be7-8630-bb3040a6b957
+![image](https://github.com/user-attachments/assets/53b06104-7da0-40d9-8bbc-6ecc1ca7c777)
 
-## 🌬️ Project Overview  
-**WindSight** is a comprehensive system designed to analyze wind turbine performance data and predict future power output using advanced machine learning models. By leveraging historical SCADA data, this project enables better planning, operational efficiency, and insights into wind energy production.
+
+## 🌬️ Project Overview 
+
+**WindSight** is a comprehensive system built to support wind energy companies in fulfilling their contractual power generation obligations under Power Purchase Agreements (PPA).  
+
+A wind energy company in Turkey, currently generating an average of **185.61 MW** daily, is bound by a PPA to deliver **167.05 MW** of power per day to the government. While this exceeds the required target, any generation falling below **150.35 MW** (a 10% deviation from the target) incurs penalties. Therefore, accurate forecasting and performance analysis are essential for **optimized resource allocation**, **penalty avoidance**, and **revenue maximization**.  
+
+WindSight leverages **2018 SCADA data** — including wind speed, direction, and turbine power output at 10-minute intervals — to:
+- Analyze operational patterns
+- Predict future power generation using ML models
+- Assist in policy-making and planning for stable power supply  
+
+By applying advanced machine learning models like **Random Forest, XGBoost, LSTM**, and **Hybrid Ensemble models**, the project helps maintain generation within the stable operation zone and ensures **compliance with regulatory thresholds** while maximizing efficiency.
+
+🔗 **Dataset**: [Wind Turbine SCADA Dataset (Kaggle)](https://www.kaggle.com/datasets/berkerisen/wind-turbine-scada-dataset)  
+
+📈 **Key Metrics**:
+- **Contractual Daily Target**: 167.05 MW  
+- **Average Generation**: 185.61 MW  
+- **Penalty Threshold**: Below 150.35 MW  
+- **Permissible Deviation**: 5–10% below target  
+
+🗂️ **Data Features**:
+- `Date/Time`: Timestamp at 10-minute intervals  
+- `LV ActivePower (kW)`: Real-time turbine power output  
+- `Wind Speed (m/s)`: Measured at hub height  
+- `Theoretical_Power_Curve (kW)`: Manufacturer-defined output  
+- `Wind Direction (°)`: Turbine orientation based on wind  
+
+WindSight not only empowers better **forecasting** but also enhances strategic decisions for **stable, penalty-free, and high-revenue operations** in the wind energy sector.
+
 
 ---
 
@@ -35,18 +64,6 @@ The overall workflow of the project is illustrated below:
   - `Matplotlib`, `Seaborn`, `Plotly` – Visualizations  
   - `Jupyter Notebooks` – Development and analysis environment  
 
----
-
-## 📊 Dataset  
-
-The project utilizes **2018 SCADA data** from Turkish wind farms, featuring:
-
-- ⏱️ 10-minute interval readings from multiple turbines  
-- 🌪️ Wind speed at hub height (m/s)  
-- ⚡ Power output (kW)  
-- 🌡️ Environmental conditions (temperature, pressure)  
-- ⚙️ Operational parameters (blade pitch, rotor speed)  
-- 🟥 Turbine status flags  
 
 ---
 
