@@ -1,6 +1,6 @@
 # ⚡ WindSight: Wind Turbine Power Analysis and Forecasting System
 
-![Wind Turbine](![image](https://github.com/user-attachments/assets/404344bd-3947-4be7-8630-bb3040a6b957)
+(![image](https://github.com/user-attachments/assets/404344bd-3947-4be7-8630-bb3040a6b957)
 
 ## 🌬️ Project Overview  
 **WindSight** is a comprehensive system designed to analyze wind turbine performance data and predict future power output using advanced machine learning models. By leveraging historical SCADA data, this project enables better planning, operational efficiency, and insights into wind energy production.
@@ -11,7 +11,7 @@
 
 The overall workflow of the project is illustrated below:
 
-![Methodology Flowchart](./e5ef245f-4a0b-4e81-8104-d40b4b56a06f.png)
+(![image](https://github.com/user-attachments/assets/adcc1eb6-dd8b-4088-819e-b96c7a1c2e33))
 
 > The process begins with raw SCADA data, followed by preprocessing, feature engineering, data exploration (visualizations), and predictive modeling using various ML algorithms.
 
@@ -61,11 +61,4 @@ The project utilizes **2018 SCADA data** from Turkish wind farms, featuring:
 
 > ✅ **Best Model:** `Hybrid (XGBoost + LSTM)` with **R² = 93.05%**
 
----
 
-## 📌 How to Use
-
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/your-username/wind-turbine-power-analysis.git
-   cd wind-turbine-power-analysis
